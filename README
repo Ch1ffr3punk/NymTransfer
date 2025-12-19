@@ -1,0 +1,35 @@
+NymTransfer 
+
+A simple and easy to use file transfer program, which
+must be used with the nym-client, for the Nym Mixnet.
+
+C:\Users\xxxxxxxxxx\Desktop>nymtransfer -h
+Usage of nymtransfer:
+  -o string
+        Output directory for received files (default "./received")
+  -r    Receive mode (listen for files)
+  -t string
+        Transfer file to address
+
+Sending a file:
+
+C:\Users\xxxxxxxxxx\Desktop>nymtransfer -t 5fhJUSmFLNRcVp8e2KwLJk1fbZzwcb3HjfBqMEHxPM6Z.7AsWhepP1o38ZSMPHFJcDtPYjfPhEoKza3VWQqbpFty@CcYinhLeF38n6xs78FG6Rz3wvosGTCU2hLB1CZyfkMVe encrypted.zip
+[Sending] encrypted.zip (3.6 MiB, 114 chunks)
+[Progress] 100% (114/114)
+[Complete] encrypted.zip (3.6 MiB)
+
+Receiving a file:
+
+C:\Users\xxxxxxxxxx\Desktop>nymtransfer -r
+Listening for files. Saving to: ./received
+Press Ctrl+C to exit
+
+[Receiving] encrypted_message.txt (13.4 KiB, 1 chunks)
+[Progress] 100% (1/1)
+[Complete] encrypted_message.txt (13.4 KiB)
+
+NymTransfer is Dedicated to Alice and Bob.
+
+
+
+
